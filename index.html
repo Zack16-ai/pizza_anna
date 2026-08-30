@@ -1,7 +1,188 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Anna | Pizzaria à Montmoreau</title>
-  </head>
+    <title>Pizza Anna - Pizzeria à emporter à Montmoreau</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fdfbf7;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #b22222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #b22222;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #f2f2f2;
+            padding-bottom: 8px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .pizza-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: #faf8f5;
+            border-radius: 6px;
+            border-left: 4px solid #b22222;
+        }
+        .pizza-info h3 {
+            font-size: 1.1rem;
+            color: #222;
+        }
+        .pizza-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .pizza-price {
+            font-weight: bold;
+            color: #b22222;
+            font-size: 1.1rem;
+        }
+        .info-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .info-box {
+                grid-template-columns: 1fr;
+            }
+        }
+        .btn-call {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .btn-call:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizza Anna</h1>
+        <p>Pizzeria Artisanale à Emporter — Montmoreau</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Section Infos Pratiques -->
+        <section>
+            <h2>Informations & Commandes</h2>
+            <div class="info-box">
+                <div>
+                    <h3>📍 Adresse</h3>
+                    <p>5 Avenue de l'Angoumois<br>16190 Montmoreau</p>
+                    <h3 style="margin-top: 15px;">🕒 Horaires</h3>
+                    <p>Mardi au Samedi : 11h30 - 14h / 18h - 22h<br>Dimanche : 18h - 22h<br><em>Fermé le lundi</em></p>
+                </div>
+                <div>
+                    <h3>📞 Commander par téléphone</h3>
+                    <p>Passez commande directement pour un retrait rapide sur place.</p>
+                    <!-- Bouton cliquable pour appeler directement depuis un mobile -->
+                    <a href="tel:0500000000" class="btn-call">📞 Appeler pour commander</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Le Menu -->
+        <section>
+            <h2>Notre Carte des Pizzas</h2>
+            <div class="menu-grid">
+                
+                <div class="pizza-item">
+                    <div class="pizza-info">
+                        <h3>La Margherita</h3>
+                        <p>Sauce tomate, mozzarella, basilic frais, huile d'olive</p>
+                    </div>
+                    <div class="pizza-price">9,00 €</div>
+                </div>
+
+                <div class="pizza-item">
+                    <div class="pizza-info">
+                        <h3>La Reggina</h3>
+                        <p>Sauce tomate, mozzarella, jambon blanc, champignons frais</p>
+                    </div>
+                    <div class="pizza-price">11,00 €</div>
+                </div>
+
+                <div class="pizza-item">
+                    <div class="pizza-info">
+                        <h3>La 4 Fromages</h3>
+                        <p>Base crème ou tomate, mozzarella, chèvre, gorgonzola, emmental</p>
+                    </div>
+                    <div class="pizza-price">12,00 €</div>
+                </div>
+
+                <div class="pizza-item">
+                    <div class="pizza-info">
+                        <h3>L'Orientale</h3>
+                        <p>Sauce tomate, mozzarella, merguez artisanales, poivrons, oignons</p>
+                    </div>
+                    <div class="pizza-price">12,50 €</div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Maquette de présentation réalisée pour Pizza Anna — Montmoreau</p>
+    </footer>
+
+</body>
+</html>
